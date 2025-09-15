@@ -1,0 +1,40 @@
+{
+  "name": "software-engineer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint",
+    "check-env": "bash scripts/check-env.sh",
+    "check-env:ps": "pwsh -File scripts/check-env.ps1",
+    "check-openai-key": "node scripts/check-openai-key.js",
+    "validate-openai-key": "node scripts/validate-openai-key.js",
+    "check-environment": "pwsh -File scripts/check-environment.ps1"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.16.1",
+    "@tanstack/react-query": "^5.87.4",
+    "@trpc/client": "^11.5.1",
+    "@trpc/next": "^11.5.1",
+    "@trpc/react-query": "^11.5.1",
+    "@trpc/server": "^11.5.1",
+    "next": "15.5.3",
+    "openai": "^5.20.2",
+    "prisma": "^6.16.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "shadcn-ui": "^0.9.5",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "typescript": "^5"
+  }
+}
